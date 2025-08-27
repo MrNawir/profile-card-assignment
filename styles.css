@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif; /* simple "custom" font */
+  background: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .card {
+  background: aliceblue;
+    width: 320px;
+    padding: 16px;
+    border-radius: 10px;            /* rounded corners */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* subtle shadow */
+    text-align: center;
+  }
+  
+  .avatar {
+  width: 150px;
+  height: 150px;
+    object-fit: cover;
+  border-radius: 50%;
+    display: block;
+    margin: 0 auto 12px;
+  }
+  
+  .name {
+    font-size: 1.4rem;
+    margin: 8px 0;
+  color: black;
+  }
+  
+  .intro {
+    font-size: 0.95rem;
+  color: black;
+    margin: 8px 0 14px;
+  }
+  
+  .links {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+  
+  .links a {
+    color: red; 
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+  
+  .links a:hover {
+    text-decoration: underline; /* still basic */
+  }
