@@ -1,6 +1,16 @@
+@font-face {
+    font-family: '3270 Nerd Font';
+    src: url('3270NF.woff2') format('woff2'),
+         url('3270NF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 body {
-    font-family: Arial, sans-serif; /* simple "custom" font */
-  background: skyblue;
+    font-family: '3270 Nerd Font', Arial, sans-serif; /* nerd font with fallback */
+    background: skyblue;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,19 +18,19 @@ body {
   }
   
   .card {
-  background: aliceblue;
+    background: aliceblue;
     width: 320px;
     padding: 16px;
     border-radius: 10px;            /* rounded corners */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* subtle shadow */
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08), 0 1.5px 6px rgba(0,0,0,0.06); /* more subtle, layered shadow */
     text-align: center;
   }
   
   .avatar {
-  width: 150px;
-  height: 150px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
-  border-radius: 50%;
+    border-radius: 50%;
     display: block;
     margin: 0 auto 12px;
   }
@@ -28,12 +38,12 @@ body {
   .name {
     font-size: 1.4rem;
     margin: 8px 0;
-  color: black;
+    color: black;
   }
   
   .intro {
     font-size: 0.95rem;
-  color: black;
+    color: black;
     margin: 8px 0 14px;
   }
   
