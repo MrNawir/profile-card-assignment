@@ -30,7 +30,7 @@ body {
     width: 150px;
     height: 150px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 10%;
     display: block;
     margin: 0 auto 12px;
   }
@@ -54,11 +54,23 @@ body {
   }
   
   .links a {
-    color: red; 
     text-decoration: none;
-    font-size: 0.95rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
   }
   
-  .links a:hover {
-    text-decoration: underline; /* still basic */
+  .links a:hover,
+  .links a:focus-visible {
+    background-color: rgba(0,0,0,0.04);
+    outline: none;
+  }
+  
+  .links a img {
+    width: 24px;
+    height: 24px;
+    display: block; /* avoid extra inline spacing */
   }
